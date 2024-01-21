@@ -1,8 +1,7 @@
 package software.ulpg.kata6;
 
-import java.util.Arrays;
+
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.lang.String.valueOf;
 import static java.util.Arrays.stream;
@@ -32,7 +31,7 @@ public class Board {
                 .collect(joining());
     }
     private String calculate(int i){
-        range(0, rows()).mapToObj(j -> format(calculate(i,j))).collect(joining());
+        return range(0, rows()).mapToObj(j -> format(calculate(i,j))).collect(joining());
     }
     private char calculate(int i, int j){
         return shouldBeAlive(i,j) ?
