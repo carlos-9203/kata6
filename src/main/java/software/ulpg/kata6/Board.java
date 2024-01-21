@@ -32,7 +32,7 @@ public class Board {
                 .collect(joining());
     }
     private String calculate(int i){
-        return range(0, rows()).mapToObj(j -> format(calculate(i,j))).collect(joining());
+        return range(0, cols()).mapToObj(j -> format(calculate(i,j))).collect(joining());
     }
     private char calculate(int i, int j){
         return shouldBeAlive(i,j) ?
