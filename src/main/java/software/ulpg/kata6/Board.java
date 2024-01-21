@@ -3,6 +3,7 @@ package software.ulpg.kata6;
 
 import java.util.List;
 
+import static java.lang.String.join;
 import static java.lang.String.valueOf;
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.joining;
@@ -89,5 +90,9 @@ public class Board {
 
     private int rows() {
         return state.length;
+    }
+
+    public String state() {
+        return join(LineBreak, state);
     }
 }
