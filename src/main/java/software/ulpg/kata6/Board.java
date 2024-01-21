@@ -1,6 +1,6 @@
 package software.ulpg.kata6;
 
-
+//kata 6
 import java.util.List;
 
 import static java.lang.String.join;
